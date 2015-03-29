@@ -3,7 +3,7 @@ simplicial-complex
 
 This CommonJS module implements basic topological operations and indexing for [abstract simplicial complexes](http://en.wikipedia.org/wiki/Abstract_simplicial_complex) (ie graphs, triangular and tetrahedral meshes, etc.) in JavaScript.
 
-What is an (abstract) simplicial complex?
+What is an (abstract) simplicial complex?st
 -----------------------------------------
 
 An [abstract simplicial complex](http://en.wikipedia.org/wiki/Abstract_simplicial_complex) is a higher dimensional generalization of the concept of a [(directed) graph](http://en.wikipedia.org/wiki/Graph_\(mathematics\)), and it plays a fundamental role in computational geometry.  Recall that a graph is represented by a pair of sets called:
@@ -209,7 +209,7 @@ For the arguments:
 * `cells` is a cell complex
 * `vertex_count` is an optional parameter giving the number of vertices in the cell complex.  If not specified, then it calls `top.incidence(top.unique(top.skeleton(cells, 0)), cells)`
 
-**Returns:** An array of elements with the same length as `vertex_count` (if specified) or `unique(skeleton(cells,0))` otherwise giving the [vertex stars of the mesh](http://en.wikipedia.org/wiki/Star_(graph_theory\)) as indexed arrays of cells.
+**Returns:** An array of elements with the same length as `vertex_count` (if specified) or `unique(skeleton(cells,0))` otherwise giving the [vertex stars of the mesh](http://en.wikipedia.org/wiki/Star_\(graph_theory\)) as indexed arrays of cells.
 
 **Time complexity:** `O(dimension(cells) * cells.length)`
 
